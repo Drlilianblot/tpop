@@ -1,0 +1,34 @@
+'''
+Created on 17 Nov 2016
+
+@author: Lilian
+'''
+
+class HuffmanTree(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self, frequencies = None):
+        '''
+        Constructor
+        '''
+        self._left = None
+        self._right = None
+        self._frequency = 0
+        if frequencies:
+            self._build_tree(frequencies)
+            
+    def _build_tree(self, frequencies):
+        freq_ordered_symbols = sorted(frequencies, key = frequencies.__getitem__, reverse = True)
+        while freq_ordered_symbols:
+            pass
+        
+    def set_left(self, **kwargs):
+        if 'tree' in kwargs:
+            tree = kwargs.get('tree')
+            if not isinstance(tree, HuffmanTree):
+                raise TypeError("HuffmanTree type expected!")
+                
+        
